@@ -13,7 +13,7 @@ while True:
     print(f'\r{h} : {m}')
     for concec in range(5):
       if concec == 0:
-        cc = requests.get('https://api.im2018.com/api/game/guess_odd?page=1&limit=31&type=24').text
+        cc = requests.get('https://api.im2018.com/api/game/guess_Odd?page=1&limit=31&type=24').text
         ccc = json.loads(cc)
         kq = [entry['result'] for entry in ccc['data']]
         print('\n-------------------\n'+str(kq[0])+'\n\n'+str(kq[29])+'\n'+str(kq[30]))
@@ -21,23 +21,23 @@ while True:
         dau = [int(char) for char in kq[0] if char.isdigit()]
         cuoi = [int(char) for char in kq[30] if char.isdigit()]
         if dau > cuoi:
-          if 'odd' in kq[29]:
-            print('Even')
+          if 'Odd' in kq[29]:
+            print('Even (Hơn)')
             c = 'Even'
           else:
-            print('Odd')
+            print('Odd (Hơn)')
             c = 'Odd'
         if dau < cuoi:
-          if 'odd' in kq[29]:
-            print('Odd')
+          if 'Odd' in kq[29]:
+            print('Odd (Thua)')
             c = 'Odd'
           else:
-            print('Even')
+            print('Even (Thua)')
             c = 'Even'
         if dau == cuoi:
           print('2 cái = nhau skip')
       if concec == 1:
-        cc = requests.get('https://api.im2018.com/api/game/guess_odd?page=1&limit=61&type=24').text
+        cc = requests.get('https://api.im2018.com/api/game/guess_Odd?page=1&limit=61&type=24').text
         ccc = json.loads(cc)
         kq = [entry['result'] for entry in ccc['data']]
         print('\n-------------------\n'+str(kq[0])+'\n\n'+str(kq[59])+'\n'+str(kq[60]))
@@ -45,23 +45,23 @@ while True:
         dau = [int(char) for char in kq[0] if char.isdigit()]
         cuoi = [int(char) for char in kq[60] if char.isdigit()]
         if dau > cuoi:
-          if 'odd' in kq[59]:
-            print('Even')
+          if 'Odd' in kq[59]:
+            print('Even (Hơn)')
             c = 'Even'
           else:
-            print('Odd')
+            print('Odd (Hơn)')
             c = 'Odd'
         if dau < cuoi:
-          if 'odd' in kq[59]:
-            print('Odd')
+          if 'Odd' in kq[59]:
+            print('Odd (Thua)')
             c = 'Odd'
           else:
-            print('Even')
+            print('Even (Thua)')
             c = 'Even'
         if dau == cuoi:
           print('2 cái = nhau skip')
       if concec == 2:
-        cc = requests.get('https://api.im2018.com/api/game/guess_odd?page=1&limit=91&type=24').text
+        cc = requests.get('https://api.im2018.com/api/game/guess_Odd?page=1&limit=91&type=24').text
         ccc = json.loads(cc)
         kq = [entry['result'] for entry in ccc['data']]
         print('\n-------------------\n'+str(kq[0])+'\n\n'+str(kq[89])+'\n'+str(kq[90]))
@@ -69,24 +69,24 @@ while True:
         dau = [int(char) for char in kq[0] if char.isdigit()]
         cuoi = [int(char) for char in kq[90] if char.isdigit()]
         if dau > cuoi:
-          if 'odd' in kq[89]:
-            print('Even')
+          if 'Odd' in kq[89]:
+            print('Even (Hơn)')
             c = 'Even'
           else:
-            print('Odd')
+            print('Odd (Hơn)')
             c = 'Odd'
         if dau < cuoi:
-          if 'odd' in kq[89]:
-            print('Odd')
+          if 'Odd' in kq[89]:
+            print('Odd (Thua)')
             c = 'Odd'
           else:
-            print('Even')
+            print('Even (Thua)')
             c = 'Even'
         if dau == cuoi:
           print('2 cái = nhau skip')
           c = skip
       if concec == 3:
-        cc = requests.get('https://api.im2018.com/api/game/guess_odd?page=1&limit=121&type=24').text
+        cc = requests.get('https://api.im2018.com/api/game/guess_Odd?page=1&limit=121&type=24').text
         ccc = json.loads(cc)
         kq = [entry['result'] for entry in ccc['data']]
         print('\n-------------------\n'+str(kq[0])+'\n\n'+str(kq[119])+'\n'+str(kq[120]))
@@ -94,23 +94,23 @@ while True:
         dau = [int(char) for char in kq[0] if char.isdigit()]
         cuoi = [int(char) for char in kq[120] if char.isdigit()]
         if dau > cuoi:
-          if 'odd' in kq[119]:
-            print('Even')
+          if 'Odd' in kq[119]:
+            print('Even (Hơn)')
             c = 'Even'
           else:
-            print('Odd')
+            print('Odd (Hơn)')
             c = 'Odd'
         if dau < cuoi:
-          if 'odd' in kq[119]:
-            print('Odd')
+          if 'Odd' in kq[119]:
+            print('Odd (Thua)')
             c = 'Odd'
           else:
-            print('Even')
+            print('Even (Thua)')
             c = 'Even'
         if dau == cuoi:
           print('2 cái = nhau skip')
       if concec == 4:
-        cc = requests.get('https://api.im2018.com/api/game/guess_odd?page=1&limit=151&type=24').text
+        cc = requests.get('https://api.im2018.com/api/game/guess_Odd?page=1&limit=151&type=24').text
         ccc = json.loads(cc)
         kq = [entry['result'] for entry in ccc['data']]
         print('\n-------------------\n'+str(kq[0])+'\n\n'+str(kq[149])+'\n'+str(kq[150]))
@@ -118,18 +118,18 @@ while True:
         dau = [int(char) for char in kq[0] if char.isdigit()]
         cuoi = [int(char) for char in kq[150] if char.isdigit()]
         if dau > cuoi:
-          if 'odd' in kq[149]:
-            print('Even')
+          if 'Odd' in kq[149]:
+            print('Even (Hơn)')
             c = 'Even'
           else:
-            print('Odd')
+            print('Odd (Hơn)')
             c = 'Odd'
         if dau < cuoi:
-          if 'odd' in kq[149]:
-            print('Odd')
+          if 'Odd' in kq[149]:
+            print('Odd (Thua)')
             c = 'Odd'
           else:
-            print('Even')
+            print('Even (Thua)')
             c = 'Even'
         if dau == cuoi:
           print('2 cái = nhau skip')
